@@ -1,0 +1,166 @@
+/***** theme customize *****/
+[data-theme="dark"] {
+   --main-color: #272b30;
+   --seconde-color: #32383e;
+   --color-text: #fff;
+   --btn-main-color: #272729;
+}
+
+.badge-color {
+   background-color: var(--seconde-color);
+}
+
+/***** End theme customize *****/
+
+/***** Global *****/
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap");
+
+body {
+   font-family: "Comfortaa", cursive;
+   min-height: 100%;
+   min-width: 100%;
+   background-color: var(--main-color);
+   color: var(--color-text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: "Nerko One", cursive;
+   color: var(--color-text) !important;
+}
+
+a,
+p,
+span {
+   color: inherit !important;
+}
+
+ul {
+   list-style-position: inside;
+}
+
+.nav-item .nav-link.active,
+.nav-item .nav-link:hover {
+   color: #09c !important;
+   transition: color 0.5s;
+}
+
+::-webkit-scrollbar {
+   width: 0.625rem;
+}
+
+::-webkit-scrollbar-track {
+   background-color: var(--seconde-color);
+}
+
+::-webkit-scrollbar-thumb {
+   background-color: var(--main-color);
+   border-radius: 50px;
+   box-shadow: 0 0 5px rgb(0 0 0 / 0.5) inset;
+}
+/***** End Global *****/
+
+/***** Home *****/
+.home .card {
+   filter: grayscale(0.7);
+   transition: transform 0.5s, filter 0.5s 0.1s;
+}
+
+header img {
+   max-height: 30vh;
+   object-fit: cover;
+}
+
+.home .card:hover {
+   transform: scale(1.05);
+   filter: grayscale(0);
+}
+
+nav {
+   background-color: rgb(58, 73, 123) !important;
+
+   margin-inline: auto;
+   margin-top: -30px;
+   border-radius: 20px;
+   box-shadow: 0 0 10px rgb(0 0 0 / 0.7);
+}
+
+/***** End Home *****/
+
+/***** Details *****/
+.details {
+   background-color: #272729be;
+
+   backdrop-filter: blur(4px);
+   min-height: 100vh;
+}
+
+/***** End Details *****/
+/***** Loader *****/
+.sk-cube-grid {
+   width: 40px;
+   height: 40px;
+   margin: 100px auto;
+ }
+ 
+ .sk-cube-grid .sk-cube {
+   width: 33%;
+   height: 33%;
+   background-color: #333;
+   float: left;
+   -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+           animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
+ }
+ .sk-cube-grid .sk-cube1 {
+   -webkit-animation-delay: 0.2s;
+           animation-delay: 0.2s; }
+ .sk-cube-grid .sk-cube2 {
+   -webkit-animation-delay: 0.3s;
+           animation-delay: 0.3s; }
+ .sk-cube-grid .sk-cube3 {
+   -webkit-animation-delay: 0.4s;
+           animation-delay: 0.4s; }
+ .sk-cube-grid .sk-cube4 {
+   -webkit-animation-delay: 0.1s;
+           animation-delay: 0.1s; }
+ .sk-cube-grid .sk-cube5 {
+   -webkit-animation-delay: 0.2s;
+           animation-delay: 0.2s; }
+ .sk-cube-grid .sk-cube6 {
+   -webkit-animation-delay: 0.3s;
+           animation-delay: 0.3s; }
+ .sk-cube-grid .sk-cube7 {
+   -webkit-animation-delay: 0s;
+           animation-delay: 0s; }
+ .sk-cube-grid .sk-cube8 {
+   -webkit-animation-delay: 0.1s;
+           animation-delay: 0.1s; }
+ .sk-cube-grid .sk-cube9 {
+   -webkit-animation-delay: 0.2s;
+           animation-delay: 0.2s; }
+ 
+ @-webkit-keyframes sk-cubeGridScaleDelay {
+   0%, 70%, 100% {
+     -webkit-transform: scale3D(1, 1, 1);
+             transform: scale3D(1, 1, 1);
+   } 35% {
+     -webkit-transform: scale3D(0, 0, 1);
+             transform: scale3D(0, 0, 1); 
+   }
+ }
+ 
+ @keyframes sk-cubeGridScaleDelay {
+   0%, 70%, 100% {
+     -webkit-transform: scale3D(1, 1, 1);
+             transform: scale3D(1, 1, 1);
+   } 35% {
+     -webkit-transform: scale3D(0, 0, 1);
+             transform: scale3D(0, 0, 1);
+   } 
+ }
+/***** End Loader *****/
